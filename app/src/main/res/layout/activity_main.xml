@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ff6543">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="152dp"
+        android:layout_height="294dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="@id/title"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/pi5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Challenge"
+        android:textColor="#E9986B"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/imageView"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <ImageButton
+        android:id="@+id/buttonplay"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/roundbtn"
+        android:src="@drawable/playbutton_foreground"
+        app:backgroundTint="#E9986B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <ImageButton
+        android:id="@+id/buttonscores"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundbtn"
+        android:src="@drawable/highscore_foreground"
+        app:backgroundTint="#E9986B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.895"
+        app:layout_constraintLeft_toLeftOf="@+id/buttonplay"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
